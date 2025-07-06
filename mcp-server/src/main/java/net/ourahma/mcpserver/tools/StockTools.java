@@ -18,7 +18,7 @@ public class StockTools {
         return this.companies;
     }
 
-    @Tool
+
     public void setAllCompanies(List<Company> companies) {
         this.companies = companies;
     }
