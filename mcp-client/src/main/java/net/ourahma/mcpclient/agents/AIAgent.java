@@ -13,9 +13,9 @@ public class AIAgent {
     public AIAgent(ChatClient.Builder chatClient, ToolCallbackProvider toolCallbackProvider) {
         this.chatClient = chatClient
                 .defaultToolCallbacks(toolCallbackProvider)
-                .defaultSystem("Answer the user question using the provided tools")
+                .defaultSystem("Answer the user question using the provided tools, if i ask about an employee name use the tool get_employee_info")
                 .defaultAdvisors(MessageChatMemoryAdvisor.builder(
-                        MessageWindowChatMemory.builder().maxMessages(20).build()
+                        MessageWindowChatMemory.builder().maxMessages(5).build()
                 ).build())
                 .build();
     }

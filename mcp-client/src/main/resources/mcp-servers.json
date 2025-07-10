@@ -6,6 +6,21 @@
         "-y",
         "@modelcontextprotocol/server-filesystem",
         "E:\\Documents\\PE\\Master\\S2\\systeme_distribues\\TP6_2\\mcp-demo-spring-python"
+      ],
+      "env": {
+        "PATH": "C:\\Users\\acer\\AppData\\Local\\nvm\\v23.3.0",
+        "NODE_PATH": "C:\\Users\\acer\\AppData\\Local\\nvm\\v23.3.0\\node_modules"
+      }
+    },
+    "python-mcp": {
+      "command": "E:\\ProgramFiles\\uv\\uv.exe",
+      "args": [
+        "run",
+        "--with",
+        "mcp[cli]",
+        "mcp",
+        "run",
+        "E:\\Documents\\PE\\Master\\S2\\systeme_distribues\\TP6_2\\mcp-demo-spring-python\\python-mcp-server\\server.py"
       ]
     }
   }
